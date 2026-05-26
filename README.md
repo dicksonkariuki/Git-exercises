@@ -129,6 +129,24 @@ Cherry-picking
 Release management
 Branching strategies
 
+# 7. Stash and Context Switching Exercise
+Scenario
+You are halfway through feature development when an urgent bug arrives.
+Tasks
+Start unfinished work
+Modify multiple files
+Stash changes
+Switch branch
+Fix urgent bug
+Return to previous work
+Apply stash
+Resolve stash conflicts if any
+Skills Tested
+Stashing
+Branch switching
+Workflow efficiency
+
+
 
 
 
