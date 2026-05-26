@@ -26,6 +26,7 @@ Collaboration practices
 
 ![alt text](<Screenshot 2026-05-21 165811.png>)
 
+
 # 2. Two Students Edit Same Line (Conflict Lab)
 Scenario
 Two students edit the same configuration line in:
