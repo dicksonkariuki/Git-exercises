@@ -24,6 +24,8 @@ Conflict resolution
 Commit history
 Collaboration practices
 
+Screenshots/Screenshot 2026-05-21 165811.png
+
 # 2. Two Students Edit Same Line (Conflict Lab)
 Scenario
 Two students edit the same configuration line in:
@@ -145,6 +147,28 @@ Skills Tested
 Stashing
 Branch switching
 Workflow efficiency
+
+# 8. Accidental Secret Exposure Recovery
+Scenario
+A developer accidentally commits:
+API keys
+passwords
+.env file
+Tasks
+Commit sensitive data
+Push to remote
+Remove secrets from history
+Add .gitignore
+Rotate secrets
+Force push cleaned history
+Requirements
+Explain:
+Why force push is risky
+Git security best practices
+Skills Tested
+Git security
+History rewriting
+Secret management
 
 
 
