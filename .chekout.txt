@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout Page</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      padding:40px;
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+      display:grid;
+      grid-template-columns: 2fr 1fr;
+      gap:30px;
+    }
+
+    .checkout-form,
+    .order-summary{
+      background:#fff;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2{
+      margin-bottom:20px;
+      color:#333;
+    }
+
+    .form-group{
+      margin-bottom:18px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:6px;
+      color:#555;
+      font-size:14px;
+    }
+
+    input,
+    select{
+      width:100%;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:6px;
+      outline:none;
+    }
+
+    input:focus,
+    select:focus{
+      border-color:#007bff;
+    }
+
+    .row{
+      display:flex;
+      gap:15px;
+    }
+
+    .row .form-group{
+      flex:1;
+    }
+
+    .summary-item{
+      display:flex;
+      justify-content:space-between;
+      margin-bottom:15px;
+      color:#444;
+    }
+
+    .total{
+      font-size:20px;
+      font-weight:bold;
+      border-top:1px solid #ddd;
+      padding-top:15px;
+      margin-top:15px;
+    }
+
+    .checkout-btn{
+      width:100%;
+      padding:14px;
+      background:#007bff;
+      color:#fff;
+      border:none;
+      border-radius:6px;
+      font-size:16px;
+      cursor:pointer;
+      margin-top:20px;
+    }
+
+    .checkout-btn:hover{
+      background:#0056b3;
+    }
+
+    @media(max-width:768px){
+      .container{
+        grid-template-columns:1fr;
+      }
+
+      .row{
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Checkout Form -->
+    <div class="checkout-form">
+      <h2>Checkout</h2>
+
+      <form>
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="john@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Address</label>
+          <input type="text" placeholder="123 Main Street" required>
+        </div>
+
+        <div class="row">
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" placeholder="New York" required>
+          </div>
+
+          <div class="form-group">
+            <label>ZIP Code</label>
+            <input type="text" placeholder="10001" required>
+          </div>
+        </div>
+
+        <h2>Payment Details</h2>
+
+        <div class="form-group">
+          <label>Card Holder Name</label>
+          <input type="text" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label>Card Number</label>
+          <input type="text" placeholder="1234 5678 9012 3456" required>
+        </div>
+
+        <div class="row">
+          <div class="form-group">
+            <label>Expiry Date</label>
+            <input type="text" placeholder="MM/YY" required>
+          </div>
+
+          <div class="form-group">
+            <label>CVV</label>
+            <input type="password" placeholder="123" required>
+          </div>
+        </div>
+
+        <button type="submit" class="checkout-btn">
+          Place Order
+        </button>
+
+      </form>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+
+      <div class="summary-item">
+        <span>Product 1</span>
+        <span>$49.99</span>
+      </div>
+
+      <div class="summary-item">
+        <span>Product 2</span>
+        <span>$29.99</span>
+      </div>
+
+      <div class="summary-item">
+        <span>Shipping</span>
+        <span>$5.00</span>
+      </div>
+
+      <div class="summary-item total">
+        <span>Total</span>
+        <span>$84.98</span>
+      </div>
+
+      <button class="checkout-btn">
+        Pay Now
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>
