@@ -65,6 +65,72 @@ Safe rollback strategies
 ***git reset --soft (commit hash) is used to undo the commits by moving the commits back to the commit hash pointed but keeps all your file changes staged in the index and untouched in your working directory ***
 
 ***git reset --hard (commit hash) is immediately and permanently deletes all uncommitted changes in your working directory and staging area to match the target state***
- 
+# 4. Simulated Team Collaboration Workflow
+Scenario
+You are working as:
+Backend engineer
+DevOps engineer
+Reviewer
+Tasks
+Fork a repository
+Clone fork locally
+Create feature branch
+Push changes
+Open pull request
+Perform code review comments
+Merge after approval
+Bonus
+Add GitHub branch protection rules.
+Skills Tested
+GitHub collaboration
+PR workflow
+Code reviews
+Team collaboration
+#  5. Git Rebase vs Merge History Lab
+Scenario
+A repository has a messy commit history.
+Tasks
+Create:
+feature/api
+Make 7 small commits
+Rebase interactively:
+squash commits
+reword commits
+Compare:
+merge workflow
+rebase workflow
+Requirements
+Explain:
+When rebasing is safe
+Why rebasing shared history is dangerous
+Skills Tested
+Rebasing
+Clean history
+Interactive rebase
+
+# 6. Emergency Hotfix Production Scenario
+Scenario
+Production application is down.
+Tasks
+Create:
+main
+develop
+release/v1.2
+Introduce production bug
+Create:
+hotfix/login-failure
+Fix issue
+Cherry-pick fix into:
+develop
+release/v1.2
+Skills Tested
+Hotfix workflow
+Cherry-picking
+Release management
+Branching strategies
+
+
+
+
 
 
